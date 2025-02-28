@@ -1,0 +1,6 @@
+version: "3.0"
+services:
+  scdap:
+    build: .
+    image: ${VERSION_IMAGE} # 用于CI阶段设置tag
+    restart: unless-stopped
